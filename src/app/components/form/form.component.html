@@ -1,1 +1,448 @@
-<p>form is working!!</p>
+<section class="container">
+  <form (ngSubmit)="saveAnswers()">
+    <!-- First Parent Question -->
+    <ul class="questionnaire">
+      <h1>Parent Question 1</h1>
+      <p>What do you intend to do with this property?</p>
+      <li>
+        <label for="q1">Rental Property</label>
+        <input
+          type="radio"
+          name="q1"
+          value="Rental Property"
+          [(ngModel)]="answer1"
+        />
+      </li>
+      <li>
+        <label for="q1">Renovation 60 Days</label>
+        <input
+          type="radio"
+          name="q1"
+          value="Renovation 60 Days"
+          [(ngModel)]="answer1"
+        />
+      </li>
+
+      <li>
+        <label for="q1">Renovation Less 60 Days</label>
+        <input
+          type="radio"
+          name="q1"
+          value="Renovation Less 60 Days"
+          [(ngModel)]="answer1"
+        />
+      </li>
+      <li>
+        <label for="answer1">Force Unable Obtain Proof</label>
+        <input
+          type="radio"
+          name="q1"
+          value="Force Unable Obtain Proof"
+          [(ngModel)]="answer1"
+        />
+      </li>
+      <li>Your Answer: {{ answer1 }}</li>
+    </ul>
+
+    <!-- Second Parent Question -->
+    <ul class="questionnaire">
+      <h1>Parent Question 2</h1>
+      <p>Does the property have (either) Knob and Tube or Alumonum wiring?</p>
+      <li>
+        <label for="q2">Knob And Tube</label>
+        <input
+          type="radio"
+          name="q2"
+          value="Knob and Property"
+          [(ngModel)]="answer2"
+        />
+      </li>
+
+      <li>
+        <label for="q2">Aluminum</label>
+        <input type="radio" name="q2" value="Aluminum" [(ngModel)]="answer2" />
+      </li>
+      <li>Your Answer: {{ answer2 }}</li>
+    </ul>
+
+    <!-- Third Parent Question -->
+    <ul class="questionnaire">
+      <h1>Parent Question 3</h1>
+      <p>Is there a pool, hot tub, and/or spa at this location?</p>
+      <li>
+        <label for="q3">YES</label>
+        <input type="radio" name="q3" value="YES" [(ngModel)]="answer3" />
+      </li>
+
+      <li>
+        <label for="q3">NO</label>
+        <input type="radio" name="q3" value="NO" [(ngModel)]="answer3" />
+      </li>
+      <li>Your Answer: {{ answer3 }}</li>
+    </ul>
+
+    <!-- Fourth Parent Question -->
+    <ul class="questionnaire">
+      <h1>Parent Question 4</h1>
+      <p>What do you intend to do with this property?</p>
+      <li>
+        <label for="q4">Rental Property</label>
+        <input
+          type="radio"
+          name="q4"
+          value="Rental Property"
+          [(ngModel)]="answer4"
+        />
+      </li>
+      <li>
+        <label for="q4">Renovation 60 Days</label>
+        <input
+          type="radio"
+          name="q4"
+          value="Renovation 60 Days"
+          [(ngModel)]="answer4"
+        />
+      </li>
+
+      <li>
+        <label for="q4">Renovation Less 60 Days</label>
+        <input
+          type="radio"
+          name="q4"
+          value="Renovation Less 60 Days"
+          [(ngModel)]="answer4"
+        />
+      </li>
+      <li>
+        <label for="answer4">Force Unable Obtain Proof</label>
+        <input
+          type="radio"
+          name="q4"
+          value="Force Unable Obtain Proof"
+          [(ngModel)]="answer4"
+        />
+      </li>
+      <li>Your Answer: {{ answer4 }}</li>
+    </ul>
+
+    <!-- Fifth Parent Question -->
+    <ul class="questionnaire">
+      <h1>Parent Question 5</h1>
+      <p>What do you intend to do with this property?</p>
+      <li>
+        <label for="q5">Rental Property</label>
+        <input
+          type="radio"
+          name="q5"
+          value="Rental Property"
+          [(ngModel)]="answer5"
+        />
+      </li>
+      <li>
+        <label for="q5">Renovation 60 Days</label>
+        <input
+          type="radio"
+          name="q5"
+          value="Renovation 60 Days"
+          [(ngModel)]="answer5"
+        />
+      </li>
+
+      <li>
+        <label for="q5">Renovation Less 60 Days</label>
+        <input
+          type="radio"
+          name="q5"
+          value="Renovation Less 60 Days"
+          [(ngModel)]="answer5"
+        />
+      </li>
+      <li>
+        <label for="answer5">Force Unable Obtain Proof</label>
+        <input
+          type="radio"
+          name="q5"
+          value="Force Unable Obtain Proof"
+          [(ngModel)]="answer5"
+        />
+      </li>
+      <li>Your Answer: {{ answer5 }}</li>
+    </ul>
+
+    <!-- Sixth Parent Question -->
+    <ul class="questionnaire">
+      <h1>Parent Question 6</h1>
+      <p>What do you intend to do with this property?</p>
+      <li>
+        <label for="q6">Rental Property</label>
+        <input
+          type="radio"
+          name="q6"
+          value="Rental Property"
+          [(ngModel)]="answer6"
+        />
+      </li>
+      <li>
+        <label for="q6">Renovation 60 Days</label>
+        <input
+          type="radio"
+          name="q6"
+          value="Renovation 60 Days"
+          [(ngModel)]="answer6"
+        />
+      </li>
+
+      <li>
+        <label for="q6">Renovation Less 60 Days</label>
+        <input
+          type="radio"
+          name="q6"
+          value="Renovation Less 60 Days"
+          [(ngModel)]="answer6"
+        />
+      </li>
+      <li>
+        <label for="answer6">Force Unable Obtain Proof</label>
+        <input
+          type="radio"
+          name="q6"
+          value="Force Unable Obtain Proof"
+          [(ngModel)]="answer6"
+        />
+      </li>
+      <li>Your Answer: {{ answer6 }}</li>
+    </ul>
+
+    <!-- Seventh Parent Question -->
+    <ul class="questionnaire">
+      <h1>Parent Question 7</h1>
+      <p>Are there any detached structures on the property?</p>
+      <li>
+        <label for="q7">YES</label>
+        <input type="radio" name="q7" value="YES" [(ngModel)]="answer7" />
+      </li>
+
+      <li>
+        <label for="q7">NO</label>
+        <input type="radio" name="q7" value="NO" [(ngModel)]="answer7" />
+      </li>
+      <li>Your Answer: {{ answer7 }}</li>
+    </ul>
+
+    <!-- Eigth Parent Question -->
+    <ul class="questionnaire">
+      <h1>Parent Question 8</h1>
+      <p>Is the detached structure currently or intended to be occupied?</p>
+      <li>
+        <label for="q8">YES</label>
+        <input type="radio" name="q8" value="YES" [(ngModel)]="answer8" />
+      </li>
+
+      <li>
+        <label for="q8">NO</label>
+        <input type="radio" name="q8" value="NO" [(ngModel)]="answer8" />
+      </li>
+      <li>Your Answer: {{ answer8 }}</li>
+    </ul>
+
+    <!-- Ninth Parent Question -->
+    <ul class="questionnaire">
+      <h1>Parent Question 9</h1>
+      <p>Is the detached structure currently or intended to be occupied?</p>
+      <li>
+        <label for="q9">YES</label>
+        <input type="radio" name="q9" value="YES" [(ngModel)]="answer9" />
+      </li>
+
+      <li>
+        <label for="q9">NO</label>
+        <input type="radio" name="q9" value="NO" [(ngModel)]="answer9" />
+      </li>
+      <li>Your Answer: {{ answer9 }}</li>
+    </ul>
+
+    <!-- Tenth Parent Question -->
+    <div class="questionnaire">
+      <h1>Parent Question 10</h1>
+      <p>No of Units.</p>
+      <select name="dropdown" [(ngModel)]="answer10">
+        <option value="8 Units">8 Units</option>
+        <option value="9 Units">9 Units</option>
+        <option value="10 Units">10 Units</option>
+        <option value="11 Units">11 Units</option>
+        <option value="12 Units">12 Units</option>
+        <option value="13 Units">13 Units</option>
+        <option value="14 Units">14 Units</option>
+        <option value="15 Units">15 Units</option>
+        <option value="16 Units">16 Units</option>
+        <option value="17 Units">17 Units</option>
+        <option value="18 Units">18 Units</option>
+        <option value="19 Units">19 Units</option>
+        <option value="20 Units">20 Units</option>
+      </select>
+      <p>Your Answer: {{ answer10 }}</p>
+    </div>
+
+    <!-- Eleventh Parent Question -->
+    <ul class="questionnaire">
+      <h1>Parent Question 11</h1>
+      <p>Has the aluminum wiring been remediated?</p>
+      <li>
+        <label for="q11">YES</label>
+        <input type="radio" name="q11" value="YES" [(ngModel)]="answer11" />
+      </li>
+
+      <li>
+        <label for="q1">NO</label>
+        <input type="radio" name="q11" value="NO" [(ngModel)]="answer11" />
+      </li>
+      <li>Your Answer: {{ answer11 }}</li>
+    </ul>
+
+    <!-- Twelfth Parent Question -->
+    <ul class="questionnaire">
+      <h1>Parent Question 12</h1>
+      <p>Is this location professionally managed?</p>
+      <li>
+        <label for="q12">YES</label>
+        <input type="radio" name="q12" value="YES" [(ngModel)]="answer12" />
+      </li>
+
+      <li>
+        <label for="q12">NO</label>
+        <input type="radio" name="q12" value="NO" [(ngModel)]="answer12" />
+      </li>
+      <li>Your Answer: {{ answer12 }}</li>
+    </ul>
+
+    <!-- Thirteenth Parent Question -->
+    <ul class="questionnaire">
+      <h1>Parent Question 13</h1>
+      <p>Is this location professionally managed?</p>
+      <li>
+        <label for="q13">YES</label>
+        <input type="radio" name="q13" value="YES" [(ngModel)]="answer13" />
+      </li>
+
+      <li>
+        <label for="q13">NO</label>
+        <input type="radio" name="q13" value="NO" [(ngModel)]="answer13" />
+      </li>
+      <li>Your Answer: {{ answer13 }}</li>
+    </ul>
+
+    <!-- Fourteenth Parent Question -->
+    <ul class="questionnaire">
+      <h1>Parent Question 14</h1>
+      <p>Is the detached structure currently or intended to be occupied?</p>
+      <li>
+        <label for="q14">YES</label>
+        <input type="radio" name="q14" value="YES" [(ngModel)]="answer14" />
+      </li>
+
+      <li>
+        <label for="q14">NO</label>
+        <input type="radio" name="q14" value="NO" [(ngModel)]="answer14" />
+      </li>
+      <li>Your Answer: {{ answer14 }}</li>
+    </ul>
+
+    <!-- Fifteenth Parent Question -->
+    <ul class="questionnaire">
+      <h1>Parent Question 15</h1>
+      <p>Is the detached structure currently or intended to be occupied?</p>
+      <li>
+        <label for="q15">YES</label>
+        <input type="radio" name="q15" value="YES" [(ngModel)]="answer15" />
+      </li>
+
+      <li>
+        <label for="q15">NO</label>
+        <input type="radio" name="q15" value="NO" [(ngModel)]="answer15" />
+      </li>
+      <li>Your Answer: {{ answer15 }}</li>
+    </ul>
+
+    <!-- Sixteenth Parent Question -->
+    <ul class="questionnaire">
+      <h1>Parent Question 16</h1>
+      <p>Is the detached structure currently or intended to be occupied?</p>
+      <li>
+        <label for="q16">YES</label>
+        <input type="radio" name="q16" value="YES" [(ngModel)]="answer16" />
+      </li>
+
+      <li>
+        <label for="q16">NO</label>
+        <input type="radio" name="q16" value="NO" [(ngModel)]="answer16" />
+      </li>
+      <li>Your Answer: {{ answer16 }}</li>
+    </ul>
+
+    <!-- Seventeenth Parent Question -->
+    <ul class="questionnaire">
+      <h1>Parent Question 17</h1>
+      <p>Is the detached structure currently or intended to be occupied?</p>
+      <li>
+        <label for="q17">YES</label>
+        <input type="radio" name="q17" value="YES" [(ngModel)]="answer17" />
+      </li>
+
+      <li>
+        <label for="q17">NO</label>
+        <input type="radio" name="q17" value="NO" [(ngModel)]="answer17" />
+      </li>
+      <li>Your Answer: {{ answer17 }}</li>
+    </ul>
+
+    <!-- Eighteenth Parent Question -->
+    <ul class="questionnaire">
+      <h1>Parent Question 18</h1>
+      <p>Is the location leased to students?</p>
+      <li>
+        <label for="q18">YES</label>
+        <input type="radio" name="q18" value="YES" [(ngModel)]="answer18" />
+      </li>
+
+      <li>
+        <label for="q18">NO</label>
+        <input type="radio" name="q18" value="NO" [(ngModel)]="answer18" />
+      </li>
+      <li>Your Answer: {{ answer18 }}</li>
+    </ul>
+
+    <!-- Nineteenth Parent Question -->
+    <ul class="questionnaire">
+      <h1>Parent Question 19</h1>
+      <p>Do you lease to undergrads?</p>
+      <li>
+        <label for="q19">YES</label>
+        <input type="radio" name="q19" value="YES" [(ngModel)]="answer19" />
+      </li>
+
+      <li>
+        <label for="q19">NO</label>
+        <input type="radio" name="q19" value="NO" [(ngModel)]="answer19" />
+      </li>
+      <li>Your Answer: {{ answer19 }}</li>
+    </ul>
+
+    <!-- Twentieth Parent Question -->
+    <ul class="questionnaire">
+      <h1>Parent Question 20</h1>
+      <p>Do you lease to undergrads?</p>
+      <li>
+        <label for="q20">YES</label>
+        <input type="radio" name="q20" value="YES" [(ngModel)]="answer20" />
+      </li>
+
+      <li>
+        <label for="q20">NO</label>
+        <input type="radio" name="q20" value="NO" [(ngModel)]="answer20" />
+      </li>
+      <li>Your Answer: {{ answer20 }}</li>
+    </ul>
+
+    <button type="submit">Save Answer</button>
+  </form>
+</section>
