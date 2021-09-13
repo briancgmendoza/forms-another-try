@@ -4,7 +4,7 @@
       "id": 1,
       "ParentQuestion": "What Do You Intend To Do With This Property?",
       "ParentCode": "IntendToDoWithProperty",
-      "ParentType": "text",
+      "ParentType": "radio",
       "AnswerTrigger": "Rental Property | Renovation 60 Days | Renovation Less 60 Days | Force Unable Obtain Proof",
       "Options": [
         {
@@ -34,7 +34,7 @@
       "id": 2,
       "ParentQuestion": "Does the property have (either) Knob And Tube or Aluminum wiring?",
       "ParentCode": "KnobOrTubeAluminum",
-      "ParentType": "text",
+      "ParentType": "radio",
       "AnswerTrigger": "Aluminum",
       "Options": [
         {
@@ -56,7 +56,7 @@
       "id": 3,
       "ParentQuestion": "Is there a pool, hot tub, and/or spa at this location?",
       "ParentCode": "IsPoolHotTubLocation",
-      "ParentType": "text",
+      "ParentType": "radio",
       "AnswerTrigger": "YES",
       "Options": [
         {
@@ -78,7 +78,7 @@
       "id": 4,
       "ParentQuestion": "What Do You Intend To Do With This Property?",
       "ParentCode": "IntendToDoWithProperty",
-      "ParentType": "text",
+      "ParentType": "radio",
       "AnswerTrigger": "Renovation 60 Days",
       "Options": [
         {
@@ -106,7 +106,7 @@
       "id": 5,
       "ParentQuestion": "What Do You Intend To Do With This Property?",
       "ParentCode": "IntendToDoWithProperty",
-      "ParentType": "text",
+      "ParentType": "radio",
       "AnswerTrigger": "Renovation 60 Days",
       "Options": [
         {
@@ -134,7 +134,7 @@
       "id": 6,
       "ParentQuestion": "What Do You Intend To Do With This Property?",
       "ParentCode": "IntendToDoWithProperty",
-      "ParentType": "text",
+      "ParentType": "radio",
       "AnswerTrigger": "YES",
       "Options": [
         {
@@ -156,7 +156,7 @@
       "id": 7,
       "ParentQuestion": "Are there any detached structures on the property?",
       "ParentCode": "IsOtherStructures",
-      "ParentType": "text",
+      "ParentType": "radio",
       "AnswerTrigger": "NO",
       "Options": [
         {
@@ -178,7 +178,7 @@
       "id": 8,
       "ParentQuestion": "Is the detached structure currently or intended to be occupied?",
       "ParentCode": "IsLocationOccupied",
-      "ParentType": "text",
+      "ParentType": "radio",
       "AnswerTrigger": "NO",
       "Options": [
         {
@@ -200,7 +200,7 @@
       "id": 9,
       "ParentQuestion": "Is the detached structure currently or intended to be occupied?",
       "ParentCode": "IsLocationOccupied",
-      "ParentType": "text",
+      "ParentType": "radio",
       "AnswerTrigger": "NO",
       "Options": [
         {
@@ -222,7 +222,7 @@
       "id": 10,
       "ParentQuestion": "No of Units.",
       "ParentCode": "PropertyNoUnits",
-      "ParentType": "text",
+      "ParentType": "dropdown",
       "AnswerTrigger": "8 Units | 9 Units | 10 Units | 11 Units | 12 Units | 13 Units | 14 Units | 15 Units | 16 Units | 17 Units | 18 Units | 19 Units | 20 Units",
       "Options": [
         {
@@ -277,7 +277,7 @@
       "id": 11,
       "ParentQuestion": "Has the aluminum wiring been remediated?",
       "ParentCode": "AluminumWiringBeenRemediated",
-      "ParentType": "text",
+      "ParentType": "radio",
       "AnswerTrigger": "YES",
       "Options": [
         {
@@ -299,7 +299,7 @@
       "id": 12,
       "ParentQuestion": "Is this location professionally managed?",
       "ParentCode": "IsLocationProfessionalManaged",
-      "ParentType": "text",
+      "ParentType": "radio",
       "AnswerTrigger": "NO",
       "Options": [
         {
@@ -321,7 +321,7 @@
       "id": 13,
       "ParentQuestion": "Is this location professionally managed?",
       "ParentCode": "IsLocationProfessionalManaged",
-      "ParentType": "text",
+      "ParentType": "radio",
       "AnswerTrigger": "NO",
       "Options": [
         {
@@ -343,7 +343,7 @@
       "id": 14,
       "ParentQuestion": "Is the detached structure currently or intended to be occupied?",
       "ParentCode": "IsLocationOccupied",
-      "ParentType": "text",
+      "ParentType": "radio",
       "AnswerTrigger": "NO",
       "Options": [
         {
@@ -365,7 +365,7 @@
       "id": 15,
       "ParentQuestion": "Is the detached structure currently or intended to be occupied?",
       "ParentCode": "IsLocationOccupied",
-      "ParentType": "text",
+      "ParentType": "radio",
       "AnswerTrigger": "NO",
       "Options": [
         {
@@ -387,7 +387,7 @@
       "id": 16,
       "ParentQuestion": "Is the detached structure currently or intended to be occupied?",
       "ParentCode": "IsLocationOccupied",
-      "ParentType": "text",
+      "ParentType": "radio",
       "AnswerTrigger": "NO",
       "Options": [
         {
@@ -409,7 +409,7 @@
       "id": 17,
       "ParentQuestion": "Is the detached structure currently or intended to be occupied?",
       "ParentCode": "IsLocationOccupied",
-      "ParentType": "text",
+      "ParentType": "radio",
       "AnswerTrigger": "YES",
       "Options": [
         {
@@ -431,7 +431,7 @@
       "id": 18,
       "ParentQuestion": "Is the location leased to students?",
       "ParentCode": "IsLocationLeasedToStudents",
-      "ParentType": "text",
+      "ParentType": "radio",
       "AnswerTrigger": "NO",
       "Options": [
         {
@@ -453,7 +453,7 @@
       "id": 19,
       "ParentQuestion": "Do you lease to undergrads?",
       "ParentCode": "DoYouLeaseToUndergrads",
-      "ParentType": "text",
+      "ParentType": "radio",
       "AnswerTrigger": "YES",
       "Options": [
         {
@@ -475,7 +475,7 @@
       "id": 20,
       "ParentQuestion": "Do you lease to undergrads?",
       "ParentCode": "DoYouLeaseToUndergrads",
-      "ParentType": "text",
+      "ParentType": "radio",
       "AnswerTrigger": "YES",
       "Options": [
         {

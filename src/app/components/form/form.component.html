@@ -2,20 +2,35 @@
   <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
     <div *ngFor="let x of jsonFormData?.questionnaire" class="questionnaire">
       <label for="x.ParentQuestion">
-        <span>Question #{{ x.id }}: <br /></span>{{ x.ParentQuestion }}</label
+        Question #{{ x.id }}: {{ x.ParentQuestion }}</label
       >
-      <p>Choices: <br /></p>
-      <div *ngFor="let j of x.Options">
-        <label for="j.option">
-          {{ j.option }}
-        </label>
+
+      <div *ngIf="x.ParentType === 'radio'; else elseBlock">
+        <div *ngFor="let j of x.Options">
+          <label for="j.option">
+            {{ j.option }}
+          </label>
+          <input
+            [type]="x.ParentType"
+            [value]="j.option"
+            [formControlName]="x.ChildQuestionCode"
+            [ngStyle]="{ color: '#fff', marginBottom: '10px' }"
+            (change)="getValue($event, x)"
+          />
+        </div>
       </div>
-      <input
-        [type]="x.ParentType"
-        [value]="x.ParentSubmittedAnswer"
-        [formControlName]="x.ChildQuestionCode"
-        [ngStyle]="{ color: '#fff', marginBottom: '10px' }"
-      />
+
+      <ng-template #elseBlock>
+        <select
+          [formControlName]="x.ChildQuestionCode"
+          (change)="getValue($event, x)"
+          [ngStyle]="{ margin: '5px' }"
+        >
+          <option *ngFor="let k of x.Options" [value]="k.option">
+            {{ k.option }}
+          </option>
+        </select>
+      </ng-template>
     </div>
 
     <button type="submit">Submit</button>

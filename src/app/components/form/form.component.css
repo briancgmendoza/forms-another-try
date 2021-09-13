@@ -18,15 +18,10 @@
   color: #eee;
 }
 
-/* .questionnaire h1,
-p,
-li {
-  padding: 5px 10px;
-  font-size: 16px;
-} */
-
-.questionnaire input {
+.questionnaire label,
+input {
   margin-left: 10px;
+  font-size: 16px;
 }
 
 button {

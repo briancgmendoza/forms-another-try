@@ -38,4 +38,8 @@ export class FormComponent implements OnChanges {
   onSubmit() {
     console.log('Form values:', this.myForm.value);
   }
+
+  getValue(event: Event, x: Questionnaire) {
+    x.ParentSubmittedAnswer = (event.target as HTMLInputElement).value;
+  }
 }
