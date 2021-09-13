@@ -6,6 +6,7 @@ import {
   ChangeDetectionStrategy,
 } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
+import { ApirequestService } from '../../services/apirequest.service'
 import { JsonFormData, Questionnaire } from 'src/app/types';
 
 @Component({
@@ -16,14 +17,19 @@ import { JsonFormData, Questionnaire } from 'src/app/types';
 })
 export class FormComponent implements OnChanges {
   @Input() jsonFormData!: JsonFormData;
+  //@Input() data: Questionnaire[] = []
   public myForm: FormGroup = this.formBuilder.group({});
 
-  constructor(private formBuilder: FormBuilder) {}
+  constructor(private formBuilder: FormBuilder, private apiRequestService: ApirequestService) {}
 
   ngOnChanges(changes: SimpleChanges): void {
     if (!changes.jsonFormData.firstChange) {
       this.createForm(this.jsonFormData.questionnaire);
     }
+
+    //if (!changes.jsonFormData.firstChange) {
+    //  this.createForm(this.jsonFormData);
+    //}
   }
 
   createForm(controls: Questionnaire[]) {
@@ -37,6 +43,7 @@ export class FormComponent implements OnChanges {
 
   onSubmit() {
     console.log('Form values:', this.myForm.value);
+    //this.apiRequestService.updateData(this.myForm.value)
   }
 
   getValue(event: Event, a: Questionnaire) {

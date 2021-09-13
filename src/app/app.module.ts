@@ -7,9 +7,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormComponent } from './components/form/form.component';
 import { ButtonComponent } from './components/button/button.component';
+import { KeysPipe } from '../assets/pipe';
 
 @NgModule({
-  declarations: [AppComponent, FormComponent, ButtonComponent],
+  declarations: [AppComponent, FormComponent, ButtonComponent, KeysPipe],
   imports: [
     BrowserModule,
     AppRoutingModule,

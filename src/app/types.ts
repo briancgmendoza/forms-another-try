@@ -3,7 +3,7 @@ export interface JsonFormData {
 }
 
 export interface Questionnaire {
-  id: number;
+  Id: number;
   ParentQuestion: string;
   ParentCode: string;
   ParentType: string;
@@ -15,7 +15,6 @@ export interface Questionnaire {
   ChildType: string;
   ShowChildQuestion: boolean;
   ShowOtherQuestion: boolean;
-  Validators: any;
 }
 
 interface Option {
