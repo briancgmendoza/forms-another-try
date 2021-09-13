@@ -1,33 +1,57 @@
-<section class="container">
+<!-- <section class="container">
   <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
     <div *ngFor="let x of jsonFormData?.questionnaire" class="questionnaire">
       <label for="x.ParentQuestion">
         Question #{{ x.id }}: {{ x.ParentQuestion }}</label
       >
+      <div *ngFor="let j of x.Options">
+        <label for="j.option">
+          {{ j.option }}
+        </label>
+        <input
+          type="radio"
+          [value]="j.option"
+          [formControlName]="x.ChildQuestionCode"
+          [ngStyle]="{ color: '#fff', marginBottom: '10px' }"
+          (change)="getValue($event, x)"
+        />
+      </div>
+    </div>
 
-      <div *ngIf="x.ParentType === 'radio'; else elseBlock">
-        <div *ngFor="let j of x.Options">
-          <label for="j.option">
-            {{ j.option }}
+    <button type="submit">Submit</button>
+  </form>
+</section> -->
+
+<section class="container">
+  <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <div *ngFor="let a of jsonFormData?.questionnaire" class="questionnaire">
+      <label for="a.ParentQuestion">
+        Question #{{ a.id }}: {{ a.ParentQuestion }}</label
+      >
+
+      <div *ngIf="a.ParentType === 'radio'; else elseBlock">
+        <div *ngFor="let b of a.Options">
+          <label for="b.option">
+            {{ b.option }}
           </label>
           <input
-            [type]="x.ParentType"
-            [value]="j.option"
-            [formControlName]="x.ChildQuestionCode"
+            type="radio"
+            [value]="b.option"
+            [formControlName]="a.ChildQuestionCode"
             [ngStyle]="{ color: '#fff', marginBottom: '10px' }"
-            (change)="getValue($event, x)"
+            (change)="getValue($event, a)"
           />
         </div>
       </div>
 
       <ng-template #elseBlock>
         <select
-          [formControlName]="x.ChildQuestionCode"
-          (change)="getValue($event, x)"
+          [formControlName]="a.ChildQuestionCode"
+          (change)="getValue($event, a)"
           [ngStyle]="{ margin: '5px' }"
         >
-          <option *ngFor="let k of x.Options" [value]="k.option">
-            {{ k.option }}
+          <option *ngFor="let c of a.Options" [value]="c.option">
+            {{ c.option }}
           </option>
         </select>
       </ng-template>
